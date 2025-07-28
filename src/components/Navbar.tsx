@@ -3,7 +3,7 @@ const HomeIcon = () => (
     <i className="ri-home-2-line ri-lg"></i>
 );
 
-const NotesIcon = () => (
+const CodeIcon = () => (
     <i className="ri-code-s-slash-line ri-lg"></i>
 );
 
@@ -20,12 +20,12 @@ const Navbar = () => {
 
     const navItems = [
         { name: 'Home', icon: HomeIcon, href: '/' },
-        { name: 'Projects', icon: NotesIcon, href: '#' }
+        { name: 'Projects', icon: CodeIcon, href: '#' }
     ];
 
     const socialItems = [
-        { name: 'GitHub', icon: GithubIcon, href: '#' },
-        { name: 'LinkedIn', icon: LinkedInIcon, href: '#' },
+        { name: 'GitHub', icon: GithubIcon, href: 'https://github.com/farhanhr' },
+        { name: 'LinkedIn', icon: LinkedInIcon, href: 'https://linkedin.com/in/farhanhram' },
     ]
 
     return (
@@ -48,9 +48,11 @@ const Navbar = () => {
                         p-2 rounded-full
                         text-gray-300 hover:text-blue-400
                         hover:bg-gray-700
-                        transition-colors duration-200
+                        transition-colors duration-300
                         flex items-center justify-center
-                        transform-gpu
+                        transform
+                        ransform hover:scale-110
+                        ease-in-out
                         "
                         title={item.name}
                     >
@@ -68,8 +70,10 @@ const Navbar = () => {
                         p-2 rounded-full
                         text-gray-300 hover:text-blue-400
                         hover:bg-gray-700
-                        transition-colors duration-200
+                        transition-colors duration-300
                         flex items-center justify-center
+                        transform hover:scale-110
+                        ease-in-out
                         "
                         title={item.name}
                     >
