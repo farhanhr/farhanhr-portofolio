@@ -1,37 +1,84 @@
-import { useState, useEffect } from "react"
+
+const HomeIcon = () => (
+    <i className="ri-home-2-line ri-lg"></i>
+);
+
+const NotesIcon = () => (
+    <i className="ri-code-s-slash-line ri-lg"></i>
+);
+
+const GithubIcon = () => (
+    <i className="ri-github-fill ri-lg"></i>
+);
+
+const LinkedInIcon = () => (
+    <i className="ri-linkedin-fill ri-lg"></i>
+);
+
 
 const Navbar = () => {
-    const [active, setActive] = useState(false);
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 150) {
-                setActive(true);
-            } else {
-                setActive(false);
-            }
-        };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        }
-    }, []);
+    const navItems = [
+        { name: 'Home', icon: HomeIcon, href: '/' },
+        { name: 'Projects', icon: NotesIcon, href: '#' }
+    ];
 
-  return (
-    <div className="navbar py-7 flex items-center  justify-between text-white">
-        <div className="logo">
-            <h1 className="text-3xl font-bold bg-white p-1 text-black md:bg-transparent md:text-white">
-            Portofolio
-            </h1>
-        </div>
-          <ul className={`menu flex items-center sm:gap-10 gap-4 sm:text-lg text-base font-medium md:static fixed left-1/2 -translate-x-1/2 md:-translate-x-0 md:opacity-100 bg-white/30 backdrop-blur-md p-4 rounded-br-2xl rounded-bl-2xl md:bg-transparent transition-all md:transition-none ${active ? "top-0 opacity-100" : "-top-10 opacity-0"}`}>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-  )
-}
+    const socialItems = [
+        { name: 'GitHub', icon: GithubIcon, href: '#' },
+        { name: 'LinkedIn', icon: LinkedInIcon, href: '#' },
+    ]
 
-export default Navbar
+    return (
+        <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+            <div
+                className="
+          flex items-center space-x-2
+          backdrop-blur-md rounded-full px-4 py-2
+          shadow-lg bg-gray-800/70 shadow-black/30
+          border border-gray-700
+        "
+            >
+                {navItems.map((item) => (
+                    <a
+                        key={item.name}
+                        href={item.href}
+                        target={item.href.startsWith('http') ? '_blank' : '_self'}
+                        rel={item.href.startsWith('http') ? 'noopener noreferrer' : ''}
+                        className="
+                        p-2 rounded-full
+                        text-gray-300 hover:text-blue-400
+                        hover:bg-gray-700
+                        transition-colors duration-200
+                        flex items-center justify-center
+                        transform-gpu
+                        "
+                        title={item.name}
+                    >
+                        <item.icon />
+                    </a>
+                ))}
+                 <div className="w-px h-6 bg-gray-600 mx-1"></div>
+                {socialItems.map((item) => (
+                    <a
+                        key={item.name}
+                        href={item.href}
+                        target={item.href.startsWith('http') ? '_blank' : '_self'}
+                        rel={item.href.startsWith('http') ? 'noopener noreferrer' : ''}
+                        className="
+                        p-2 rounded-full
+                        text-gray-300 hover:text-blue-400
+                        hover:bg-gray-700
+                        transition-colors duration-200
+                        flex items-center justify-center
+                        "
+                        title={item.name}
+                    >
+                        <item.icon />
+                    </a>
+                ))}
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;
