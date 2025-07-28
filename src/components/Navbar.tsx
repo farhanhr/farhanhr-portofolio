@@ -19,8 +19,8 @@ const LinkedInIcon = () => (
 const Navbar = () => {
 
     const navItems = [
-        { name: 'Home', icon: HomeIcon, href: '/' },
-        { name: 'Projects', icon: CodeIcon, href: '#' }
+        { name: 'Home', icon: HomeIcon, href: '/#' },
+        { name: 'Projects', icon: CodeIcon, href: '#projects' }
     ];
 
     const socialItems = [

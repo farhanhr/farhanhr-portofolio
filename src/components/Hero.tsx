@@ -9,7 +9,7 @@ const Hero = () => {
               <p className='text-sm/tight sm:text-lg md:text-xl/tight opacity-90'>Student / Software Engineer
               </p>
               <div className='my-auto sm:mb-2 sm:mt-auto bg-gray-800/80 border border-white rounded-xl w-max hover:bg-gray-700 hover:text-blue-400 transition-all duration-300 transform hover:scale-105 ease-in-out'>
-                <a href="#" className='text-base block px-4 py-2'>Contact me</a>
+                <a href="https://linkedin.com/in/farhanhram" className='text-base block px-4 py-2'>Contact me</a>
               </div>
         </div>
         <img src={DataImage.HeroImage} alt="Hero Image" className='w-[15rem] md:w-[18rem] md:ml-auto self-start rounded-full' />

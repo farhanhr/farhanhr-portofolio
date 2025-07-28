@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     imageUrl,
 }) => {
     return (
-        <div className="rounded-xl overflow-hidden shadow-md border bg-white dark:bg-zinc-900 max-w-sm">
+        <div className="rounded-xl overflow-hidden shadow-md border bg-white dark:bg-zinc-900 max-w-md sm:max-w-lg">
             {imageUrl && (
                 <div className="w-full h-48 bg-zinc-200 dark:bg-zinc-800">
                     <img
@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     {tools.map((tool) => (
                         <span
                             key={tool}
-                            className="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 px-2 py-1 rounded-md"
+                            className="text-xs font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 px-2 py-1 rounded-md"
                         >
                             {tool}
                         </span>
