@@ -1,4 +1,4 @@
-import { listProyek } from "../data"
+import { listProjects } from "../data"
 import ProjectCard from "./ProjectCard"
 
 const Project = () => {
@@ -8,13 +8,15 @@ const Project = () => {
         <p className="text-lg font-medium/loose text-center opacity-60">Check out my latest projects</p>
         <div className="flex justify-center">
         <div className="project-box mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
-            {listProyek.map(project => (
+            {listProjects.map(project => (
                 <ProjectCard
                 key={project.id}
-                title={project.nama}
-                description={project.desk}
+                title={project.name}
+                description={project.description}
                 tools={project.tools}
-                imageUrl={project.gambar}
+                imageUrl={project.image}
+                websiteLink={project.webLink}
+                sourceCodeLink={project.codeLink}
                 />
             ))}
         </div>

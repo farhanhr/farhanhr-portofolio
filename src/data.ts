@@ -6,152 +6,92 @@ const Image = {
 
 export default Image;
 
-import Tools1 from "/assets/tools/vscode.png";
-import Tools2 from "/assets/tools/reactjs.png";
-import Tools3 from "/assets/tools/nextjs.png";
-import Tools4 from "/assets/tools/tailwind.png";
-import Tools5 from "/assets/tools/bootstrap.png";
-import Tools6 from "/assets/tools/js.png";
-import Tools7 from "/assets/tools/nodejs.png";
-import Tools8 from "/assets/tools/github.png";
-import Tools9 from "/assets/tools/ai.png";
-import Tools10 from "/assets/tools/canva.png";
-import Tools11 from "/assets/tools/figma.png";
+import ReactJSImage from "/assets/tools/reactjs.png";
+import TailwindImage from "/assets/tools/tailwind.png";
+import JSImage from "/assets/tools/js.png";
+import TSImage from "/assets/tools/typescript.png";
+import GoImage from "/assets/tools/go.png";
+import NodeJSImage from "/assets/tools/nodejs.png";
+import GitImage from "/assets/tools/git.png";
+import GithubImage from "/assets/tools/github.png";
+import PHPImage from "/assets/tools/php.png";
+import LaravelImage from "/assets/tools/laravel.png";
 
 export const listTools = [
+
   {
     id: 1,
-    gambar: Tools1,
-    nama: "Visual Studio Code",
-    ket: "Code Editor",
-    dad: "100",
+    image: JSImage,
+    name: "Javascript",
   },
   {
     id: 2,
-    gambar: Tools2,
-    nama: "React JS",
-    ket: "Framework",
-    dad: "200",
+    image: TSImage,
+    name: "TypeScript",
   },
   {
     id: 3,
-    gambar: Tools3,
-    nama: "Next JS",
-    ket: "Framework",
-    dad: "300",
+    image: GoImage,
+    name: "Go",
   },
   {
     id: 4,
-    gambar: Tools4,
-    nama: "Tailwind CSS",
-    ket: "Framework",
-    dad: "400",
+    image: NodeJSImage,
+    name: "Node JS",
   },
   {
     id: 5,
-    gambar: Tools5,
-    nama: "Bootstrap",
-    ket: "Framework",
-    dad: "500",
+    image: GitImage,
+    name: "Git",
   },
   {
     id: 6,
-    gambar: Tools6,
-    nama: "Javascript",
-    ket: "Language",
-    dad: "600",
+    image: GithubImage,
+    name: "Github",
   },
   {
     id: 7,
-    gambar: Tools7,
-    nama: "Node JS",
-    ket: "Javascript Runtime",
-    dad: "700",
+    image: ReactJSImage,
+    name: "ReactJS",
   },
   {
     id: 8,
-    gambar: Tools8,
-    nama: "Github",
-    ket: "Repository",
-    dad: "800",
+    image: TailwindImage,
+    name: "TailwindJS",
   },
   {
     id: 9,
-    gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
-    dad: "900",
+    image: PHPImage,
+    name: "PHP",
   },
   {
     id: 10,
-    gambar: Tools10,
-    nama: "Canva",
-    ket: "Design App",
-    dad: "1000",
-  },
-  {
-    id: 11,
-    gambar: Tools11,
-    nama: "Figma",
-    ket: "Design App",
-    dad: "1100",
+    image: LaravelImage,
+    name: "Laravel",
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
-import Proyek3 from "/assets/proyek/proyek3.webp";
-import Proyek4 from "/assets/proyek/proyek4.webp";
-import Proyek5 from "/assets/proyek/proyek5.webp";
-import Proyek6 from "/assets/proyek/proyek6.webp";
+import FixUimage from "/assets/proyek/fixu.png";
+import TBPimage from "/assets/proyek/tbp-center.gif";
 
-export const listProyek = [
+
+export const listProjects = [
   {
     id: 1,
-    gambar: Proyek1,
-    nama: "Website Sekolah",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
-    dad: "200",
+    image: FixUimage,
+    name: "FixU: Depression Detection App",
+    description: "FixU is an innovative depression detection app that leverages the power of artificial neural network to accurately assess the user's mental state. With a focus on accessibility and personalization, this app provides tailored feedback to support users on their journey toward mental health.",
+    tools: ["Android Studio", "Kotlin", "Firebase"],
+    webLink: "https://github.com/7innovations/fixu-mobile-development/releases/tag/v1.0.1",
+    codeLink: "https://github.com/7innovations/fixu-mobile-development"
   },
   {
     id: 2,
-    gambar: Proyek2,
-    nama: "Company Profile",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Swiper", "Lightbox Gallery"],
-    dad: "300",
-  },
-  {
-    id: 3,
-    gambar: Proyek3,
-    nama: "Web Pernikahan 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
-    dad: "400",
-  },
-  {
-    id: 4,
-    gambar: Proyek4,
-    nama: "Website Course",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
-    dad: "500",
-  },
-  {
-    id: 5,
-    gambar: Proyek5,
-    nama: "Web Portfolio",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "Bootsrap"],
-    dad: "600",
-  },
-  {
-    id: 6,
-    gambar: Proyek6,
-    nama: "Company Profile 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["NextJS", "TailwindCSS", "Framermotion"],
-    dad: "700",
+    image: TBPimage,
+    name: "To Be Profesional Center",
+    description: "To Be Professional Center is a consulting, training, and professional development service for both individuals and organizations. This website was built to introduce, explain, and manage the training schedule",
+    tools: ["Laravel", "TailwinCSS", "MySQL", "AlpineJS"],
+    webLink: "",
+    codeLink: ""
   },
 ];
