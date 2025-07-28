@@ -29,7 +29,7 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+        <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
             <div
                 className="
           flex items-center space-x-2
