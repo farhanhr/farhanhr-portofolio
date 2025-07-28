@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <div className="max-w-[768px] container mx-auto px-4 pb-18g text-white">
+    <div className="max-w-[768px] container mx-auto px-4 pb-18 text-white">
       <Navbar />
       <Hero />
       <Tools />
