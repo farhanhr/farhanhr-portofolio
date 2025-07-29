@@ -71,14 +71,15 @@ export const listTools = [
   },
 ];
 
-import FixUimage from "/assets/proyek/fixu.png";
-import TBPimage from "/assets/proyek/tbp-center.gif";
+import FixUImage from "/assets/proyek/fixu.png";
+import TBPImage from "/assets/proyek/tbp-center.gif";
+import MedyumImage from "/assets/proyek/not-medyum.png";
 
 
 export const listProjects = [
   {
     id: 1,
-    image: FixUimage,
+    image: FixUImage,
     name: "FixU: Depression Detection App",
     description: "FixU is an innovative depression detection app that leverages the power of artificial neural network to accurately assess the user's mental state. With a focus on accessibility and personalization, this app provides tailored feedback to support users on their journey toward mental health.",
     tools: ["Android Studio", "Kotlin", "Firebase"],
@@ -87,11 +88,20 @@ export const listProjects = [
   },
   {
     id: 2,
-    image: TBPimage,
+    image: TBPImage,
     name: "To Be Profesional Center",
     description: "To Be Professional Center is a consulting, training, and professional development service for both individuals and organizations. This website was built to introduce, explain, and manage the training schedule",
     tools: ["Laravel", "TailwinCSS", "MySQL", "AlpineJS"],
     webLink: "",
-    codeLink: ""
+    codeLink: "https://github.com/farhanhr/tbp-center"
+  },
+  {
+    id: 3,
+    image: MedyumImage,
+    name: "Not Medyum Rest API",
+    description: "A minimalist content publishing rest API with Go. Built with Hexagonal Architecture and several services like supabase for database and imagekit for storage.",
+    tools: ["Go", "Fiber", "Supabase", "ImageKit"],
+    webLink: "",
+    codeLink: "https://github.com/farhanhr/go-api-hex-architecture"
   },
 ];
