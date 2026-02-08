@@ -132,7 +132,7 @@ export const listProjects = [
     id: 4,
     image: EcommerceDashboard,
     name: "Ecommerce Analytics Dashboard",
-    description: "A minimalist content publishing rest API with Go. Built with Hexagonal Architecture and several services like supabase for database and imagekit for storage.",
+    description: "Interactive E-commerce Analytics Dashboard — a Streamlit-based web app that visualizes sales trends, customer insights, and performance using interactive charts to support data-driven decisions.",
     tools: ["Python", "Streamlit", "Pandas", "Matplotlib"],
     webLink: "https://e-commerce-dashboard-kstx6nvwsgenzs29m2kkme.streamlit.app/",
   },
