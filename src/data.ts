@@ -98,11 +98,27 @@ import FixUImage from "/assets/proyek/fixu.png";
 import TBPImage from "/assets/proyek/tbp-center.gif";
 import MedyumImage from "/assets/proyek/not-medyum.png";
 import EcommerceDashboard from "/assets/proyek/analytics-dashboard.png"
-
+import LendingClubAnalyst from "/assets/proyek/lending-club-analysis.webp"
 
 export const listProjects = [
   {
     id: 1,
+    image: EcommerceDashboard,
+    name: "Ecommerce Analytics Dashboard",
+    description: "Interactive E-commerce Analytics Dashboard — a Streamlit-based web app that visualizes sales trends, customer insights, and performance using interactive charts to support data-driven decisions.",
+    tools: ["Python", "Streamlit", "Pandas", "Matplotlib"],
+    webLink: "https://e-commerce-dashboard-kstx6nvwsgenzs29m2kkme.streamlit.app/",
+  },
+  {
+    id: 2,
+    image: LendingClubAnalyst,
+    name: "Lending Club Risk Analyst",
+    description: "Credit risk analysis Lending Club loan data to explore borrower behavior and identify patterns related to loan performance. Applied credit scorecard concepts and machine learning techniques to support data-driven financial risk assessment.",
+    tools: ["Python", "Pandas", "Matplotlib"],
+    codeLink: "https://github.com/farhanhr/lending-club-risk-analyst"
+  },
+  {
+    id: 3,
     image: FixUImage,
     name: "FixU: Depression Detection App",
     description: "FixU is an innovative depression detection app that leverages the power of artificial neural network to accurately assess the user's mental state. With a focus on accessibility and personalization, this app provides tailored feedback to support users on their journey toward mental health.",
@@ -111,7 +127,7 @@ export const listProjects = [
     codeLink: "https://github.com/7innovations/fixu-mobile-development"
   },
   {
-    id: 2,
+    id: 4,
     image: TBPImage,
     name: "To Be Profesional Center",
     description: "To Be Professional Center is a consulting, training, and professional development service for both individuals and organizations. This website was built to introduce, explain, and manage the training schedule",
@@ -120,20 +136,12 @@ export const listProjects = [
     codeLink: "https://github.com/farhanhr/tbp-center"
   },
   {
-    id: 3,
+    id: 5,
     image: MedyumImage,
     name: "Not Medyum Rest API",
     description: "A minimalist content publishing rest API with Go. Built with Hexagonal Architecture and several services like supabase for database and imagekit for storage.",
     tools: ["Go", "Fiber", "Supabase", "ImageKit"],
     webLink: "",
     codeLink: "https://github.com/farhanhr/go-api-hex-architecture"
-  },
-  {
-    id: 4,
-    image: EcommerceDashboard,
-    name: "Ecommerce Analytics Dashboard",
-    description: "Interactive E-commerce Analytics Dashboard — a Streamlit-based web app that visualizes sales trends, customer insights, and performance using interactive charts to support data-driven decisions.",
-    tools: ["Python", "Streamlit", "Pandas", "Matplotlib"],
-    webLink: "https://e-commerce-dashboard-kstx6nvwsgenzs29m2kkme.streamlit.app/",
   },
 ];
