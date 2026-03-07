@@ -94,15 +94,25 @@ export const listTools = [
   },
 ];
 
-import FixUImage from "/assets/proyek/fixu.png";
+import FixUImage from "/assets/proyek/fixu.webp";
 import TBPImage from "/assets/proyek/tbp-center.gif";
-import MedyumImage from "/assets/proyek/not-medyum.png";
-import EcommerceDashboard from "/assets/proyek/analytics-dashboard.png"
+import MedyumImage from "/assets/proyek/not-medyum.webp";
+import EcommerceDashboard from "/assets/proyek/analytics-dashboard.webp"
 import LendingClubAnalyst from "/assets/proyek/lending-club-analysis.webp"
+import BehavioralRiskAnalysis from "/assets/proyek/behavioral-risk-analysis.webp"
 
 export const listProjects = [
   {
     id: 1,
+    image: BehavioralRiskAnalysis,
+    name: "Behavioral Risk Analysis & Warning System",
+    description: "Developed a behavioral risk warning system using XGBoost to predict credit card default risk from customer financial behavior. Built a Streamlit dashboard for batch risk scoring, portfolio segmentation, and actionable collections insights.",
+    tools: ["Python", "Streamlit", "Pandas", "Matplotlib", "XGBoost"],
+    webLink: "https://behavioral-risk-analysis-4yakxefcjbkgrwyqj2rzlq.streamlit.app/",
+    codeLink: "https://github.com/farhanhr/behavioral-risk-analysis"
+  },
+  {
+    id: 2,
     image: EcommerceDashboard,
     name: "Ecommerce Analytics Dashboard",
     description: "Interactive E-commerce Analytics Dashboard — a Streamlit-based web app that visualizes sales trends, customer insights, and performance using interactive charts to support data-driven decisions.",
@@ -110,7 +120,7 @@ export const listProjects = [
     webLink: "https://e-commerce-dashboard-kstx6nvwsgenzs29m2kkme.streamlit.app/",
   },
   {
-    id: 2,
+    id: 3,
     image: LendingClubAnalyst,
     name: "Lending Club Risk Analyst",
     description: "Credit risk analysis Lending Club loan data to explore borrower behavior and identify patterns related to loan performance. Applied credit scorecard concepts and machine learning techniques to support data-driven financial risk assessment.",
@@ -118,7 +128,7 @@ export const listProjects = [
     codeLink: "https://github.com/farhanhr/lending-club-risk-analyst"
   },
   {
-    id: 3,
+    id: 4,
     image: FixUImage,
     name: "FixU: Depression Detection App",
     description: "FixU is an innovative depression detection app that leverages the power of artificial neural network to accurately assess the user's mental state. With a focus on accessibility and personalization, this app provides tailored feedback to support users on their journey toward mental health.",
@@ -127,7 +137,7 @@ export const listProjects = [
     codeLink: "https://github.com/7innovations/fixu-mobile-development"
   },
   {
-    id: 4,
+    id: 5,
     image: TBPImage,
     name: "To Be Profesional Center",
     description: "To Be Professional Center is a consulting, training, and professional development service for both individuals and organizations. This website was built to introduce, explain, and manage the training schedule",
@@ -136,7 +146,7 @@ export const listProjects = [
     codeLink: "https://github.com/farhanhr/tbp-center"
   },
   {
-    id: 5,
+    id: 6,
     image: MedyumImage,
     name: "Not Medyum Rest API",
     description: "A minimalist content publishing rest API with Go. Built with Hexagonal Architecture and several services like supabase for database and imagekit for storage.",
