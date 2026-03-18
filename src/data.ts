@@ -107,7 +107,7 @@ export const listProjects = [
     id: 1,
     image: Terralitik,
     name: "Terralitik - Java Drought Risk EWS",
-    description: "Developed Terralitik EWS, a web-based early warning system that leverages geospatial data processing and interactive visualizations to deliver clear and actionable insights. Built with Streamlit and integrated geospatial data processing, the application focuses on delivering real-time environmental insights through intuitive and interactive dashboards for early warning purposes.",
+    description: "An early warning system that leverages geospatial data and visualizations to deliver clear insights. The application focuses on delivering real-time environmental insights through intuitive and interactive dashboards for early warning purposes.",
     tools: ["Python", "Streamlit", "Pandas", "XGBoost"],
     webLink: "https://terralitik-ews.streamlit.app/",
     codeLink: "https://github.com/farhanhr/terralitik"
